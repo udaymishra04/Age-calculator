@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="container">
+  <form id="dob" class="form_dob">
+    <div class="form_dob_day">
+      <label for="day" class="form_day_label clrRed">DAY</label>
+      <input type="text" id="form_day_input" class="form_day_input bdrRed" name="day" placeholder="DD">
+      <span class="day_error"></span>
+    </div>
+
+    <div class="form_dob_month">
+      <label for="month" class="form_month_label clrRed">MONTH</label>
+      <input type="text" id="form_month_input" class="form_month_input bdrRed" name="month" placeholder="MM">
+      <span class="month_error"></span>
+    </div>
+
+    <div class="form_dob_year">
+      <label for="year" class="form_year_label clrRed">YEAR</label>
+      <input type="text" id="form_year_input" class="form_year_input bdrRed" name="year" placeholder="YYYY">
+      <span class="year_error"></span>
+    </div>
+  </form>
+  <hr>
+  <div class="arrow">
+    <button class="btn">
+      <img src="assets/images/icon-arrow.svg" class="arrow_icon" alt="arrow icon" width="46" height="44">
+    </button>
+  </div>
+  <div class="age">
+    <div class="age_years">
+      <h2 class="age_h2"><span id="age_years_num" class="age_years_num">--</span> years</h2>
+    </div>
+
+    <div class="age_months">
+      <h2 class="age_h2"><span id="age_months_num" class="age_months_num">--</span> months</h2>
+    </div>
+
+    <div class="age_days">
+      <h2 class="age_h2"><span id="age_days_num" class="age_days_num">--</span> days</h2>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
